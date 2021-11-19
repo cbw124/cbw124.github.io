@@ -1,0 +1,57 @@
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+
+<html>
+	<head>
+	<title>Christian Williams</title>
+	<link rel='stylesheet' type='text/css' href='style.css'>
+	</head>
+	<body>
+	  
+Formal language uses symbols to represent abstractions. A symbol designates either an <i>indeterminate</i> particular or a <i>determinate</i> individual.
+	  <br><center>
+	    <table><tr>
+		<td>\(x: \mathbb{R}\)</td>
+		<td>\(\pi: \mathbb{R}\)</td>
+		<td>\(f(x) :\equiv x + \pi\)</td>
+		<td>\(f:\mathbb{R}\to \mathbb{R}\)</td>		  
+	  </tr></table>
+	  </center><br>
+
+Substitution is <i>determination</i>.
+	  <center>
+	    \(M[N/x] :\equiv ``\text{ in term } M \text{, define } x \text{ to be } N"\)
+	  </center>
+The canonical form is function application.
+	  <center>
+	    \(f(\pi) = \pi + \pi = \tau\)
+	  </center><br>
+This simple act is the heartbeat of computation.<br><br>
+
+However, mathematics and computer science have different perspectives of symbolic representation. Mathematics in general uses symbols informally; an exposition simply chooses enough distinct symbols to reason precisely. In computer science, however, the representation is completely formal, and in fact crucial - symbols are either necessary placeholders, or actual references to data.<br><br>
+
+This disconnect has for the most part been of little consequence; mathematicians simply "plug it in", and programmers use software which generates and manages variables. However, the former 
+	   <center>
+	    <table><tr>
+		<td>
+		  \(v: V \Rightarrow \Lambda\)<br><br>
+		  \(1\leq i \leq n\)<br>
+		  --------------------------<br>
+		  \(x_1,\dots ,x_n \vdash v(x_i)\)<br>
+		</td>
+	      <td>
+	  \(\lambda: \delta\Lambda \Rightarrow \Lambda\)<br><br>
+	  \(x_1,\dots , x_n, x_{n+1} \vdash t\)<br>
+	  --------------------------------<br>
+	  \(x_1,\dots , x_n \vdash \lambda x_{n+1}.t\)<br>
+	      </td>
+	      <td>
+		\(@: \Lambda^2 \Rightarrow \Lambda\)<br><br>
+		\(x_1,\dots , x_n \vdash t_1,t_2\)<br>
+		--------------------------------<br>
+		\(x_1,\dots , x_n \vdash @(t_1,t_2)\)<br>
+	      </td>
+	  </tr></table>
+	  </center>
+	  
+	</body>
+</html>
