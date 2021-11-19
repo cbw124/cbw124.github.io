@@ -1,0 +1,46 @@
+body {	font-size: 24px;
+	font-family: 'consolas';}
+
+a:link {text-decoration: none;color: #33544a;}
+a:visited {text-decoration: none;color: #33544a;}
+a:hover {color:#99a9a4;}
+p {align:"justify";}
+th, td {padding: 15px;}
+
+img.resize  {max-width:33%; max-height:33%;}
+img.resize1 {max-width:  90%;}
+img.resize2 {max-width:  80%;}
+img.resize3 {max-width: 100%;}
+
+.column   {float: left; width:  50%;}
+/*.column0h {float: left; height: 40%;}*/
+.column0 {float: left; width:  40%;}
+/*.column1h {float: left; height: 60%;}*/
+.column1 {float: left; width:  60%;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 0;
+}
+
+/* Control the right side */
+.right {
+  right: 0;
+}
